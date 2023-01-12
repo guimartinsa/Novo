@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient( to top,#1A0C09,#893A19,#BC5F1A,#DF8B45,#DF9065);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background-color: black;
+}
+
+#cabesalho a{
+    font-size:25px;
+    color: #fff;
+}
+.menu{
+    width: 40px;
+    height: 40px;
+    position:relative;
+}
+
+.menu label{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position:absolute;
+    transition: all 0.3s linear;
+    background-color: black;
+}
+
+#check{
+    position:absolute;
+    z-index: 1;
+    display: none;
+}
+
+.menu span{
+    width: 30px;
+    height: 3px;
+    top: 20px;
+    left: 4px;
+    position:absolute;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+
+.menu span:before{
+    content: "";
+    width: 30px;
+    height: 3px;
+    bottom: -10px;
+    position: absolute;
+    background-color: wheat;
+    transition: all 0.3s linear;
+}
+
+.menu span:after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    top: -10px;
+    position: absolute;
+    background-color: wheat;
+    transition: all 0.3s linear;
+}
+
+#check:checked~span{
+    background-color: transparent;
+}
+#check:checked ~ span:before{
+    transform: translate(0px , -10px) rotate(-45deg);
+}
+#check:checked~span:after{
+    transform: translate(0px , 10px) rotate(45deg);
+}
