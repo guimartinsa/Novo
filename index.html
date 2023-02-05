@@ -4,19 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./asets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>KOGuisbuger</title>
+    <title>Spot Burger</title>
 </head>
 <body>
     <header id="cabesalho" class="just">
-        <img src="./asets/logo.png" alt="img logo">
+        <img src="./asets/logo.png" alt="img logo" style="height: 100%; ">
         <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
         <div class="menu">
-            <input type="checkbox" name="" id="check">
+            <input type="checkbox" name="" id="check" onclick="clickmenu()">
             <label for="check"></label>
             <span></span>
         </div>
+
+        <div id="menu-b">
+            <ul id="ul-menu" style="list-style: none;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
     </header>
+
+
+
+    <div id="most">
+            <div id="text">
+                <h1>VERDADEIRA EXPERIENCIA GOURMET.</h1>
+                <br><br>
+                <h2>Trabalhando sempre com produtos de qualidade</h2>
+            </div>
+    </div>
+
+    <div id="cardapio">
+        <style>
+            h1{
+                font-size: 40px;
+                color: #fff;
+                display: flex; 
+                justify-content: center;
+            }
+            hr{
+                height: .8px;
+                width: 100%;    
+                background-color: rgba(0, 0, 0, 0.395);
+                border: none;
+            }
+
+            h3 , p{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                font-weight: 700;
+            }
+
+        </style>
+
+        <h1>Cardápio</h1>
+        <hr>
+        <ul id="main-list">
+            <li class="itens">
+                <div class="geral">
+                    <h3>Spot onin crisp </h3>
+                    <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                    <p>Pão,  100g, cheddar, picles, frango, salada</p>
+                </div>
+            </li>
+
+            <li class="itens">
+                <div class="geral">
+                    <h3>Spot onin crisp </h3>
+                    <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                    <p>Pão, blend 100g, cheddar, picles, frango,salada</p>
+                </div>
+            </li>
+
+            <li class="itens">
+                <div class="geral">
+                    <h3>Spot onin crisp </h3>
+                    <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                    <p>Pão,  100g, cheddar, picles, frango, salada</p>
+                </div>
+            </li>
+
+            <li class="itens">
+                <div class="geral">
+                    <h3>Spot onin crisp </h3>
+                    <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                    <p>Pão, blend 100g, cheddar, picles, frango,salada</p>
+                </div>
+            </li>
+
+ 
+
+            
+        </ul>
+    </div>
     
 </body>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
