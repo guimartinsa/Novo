@@ -5,37 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./asets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./asets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Spot Burger</title>
 </head>
 <body>
     <header id="cabesalho" class="just">
         <img src="./asets/logo.png" alt="img logo" style="height: 100%; ">
         <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-        <div class="menu">
-            <input type="checkbox" name="" id="check" onclick="clickmenu()">
+        <!--<div class="menu">
+            <input type="checkbox" name="" id="check" onclick="cl ickmenu()">
             <label for="check"></label>
             <span></span>
-        </div>
-
-        <div id="menu-b">
-            <ul id="ul-menu" style="list-style: none;">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </div>
+        </div>-->
+        <nav id="nav">
+                <ul id="ul-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+        </nav>
     </header>
 
-
-
     <div id="most">
-            <div id="text">
-                <h1>VERDADEIRA EXPERIENCIA GOURMET.</h1>
-                <br><br>
-                <h2>Trabalhando sempre com produtos de qualidade</h2>
-            </div>
+        <div id="text">
+            <h1>VERDADEIRA EXPERIENCIA GOURMET.</h1>
+            <br><br>
+            <h2>Trabalhando sempre com produtos de qualidade</h2>
+        </div>
+        
+        
     </div>
 
     <div id="cardapio">
@@ -60,47 +62,117 @@
                 font-weight: 700;
             }
 
+            details{
+                display: inline-flex;
+                margin: 0px 50px;
+            }
+
+            summary{
+                font-size: 20px;
+                color: #fff;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                cursor: pointer;
+            }
         </style>
 
         <h1>Cardápio</h1>
         <hr>
-        <ul id="main-list">
-            <li class="itens">
-                <div class="geral">
-                    <h3>Spot onin crisp </h3>
-                    <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
-                    <p>Pão,  100g, cheddar, picles, frango, salada</p>
-                </div>
-            </li>
+        <details open>
+            <summary>Lanches gourmet</summary>
+            <ul class="main-list">
+                <li class="itens">
+                    <div class="geral">
+                        <h3>Spot onin crisp </h3>
+                        <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                        <p>Pão,  100g, cheddar, picles, frango, salada</p>
+                    </div>
+                </li>
+                <li class="itens">
+                    <div class="geral">
+                        <h3>Spot onin crisp </h3>
+                        <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                        <p>Pão, blend 100g, cheddar, picles, frango,salada</p>
+                    </div>
+                </li>
+                <li class="itens">
+                    <div class="geral">
+                        <h3>Spot onin crisp </h3>
+                        <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                        <p>Pão,  100g, cheddar, picles, frango, salada</p>
+                    </div>
+                </li>
+                <li class="itens">
+                    <div class="geral">
+                        <h3>Spot onin crisp </h3>
+                        <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                        <p>Pão, blend 100g, cheddar, picles, frango,salada</p>
+                    </div>
+                </li>
+            </ul>
+        </details>
 
-            <li class="itens">
-                <div class="geral">
-                    <h3>Spot onin crisp </h3>
-                    <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
-                    <p>Pão, blend 100g, cheddar, picles, frango,salada</p>
-                </div>
-            </li>
+        <details open>
+            <summary>Lanches simples</summary>
+            <ul class="main-list">
+                <li class="itens">
+                    <div class="geral">
+                        <h3>Spot onin crisp </h3>
+                        <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                        <p>Pão,  100g, cheddar, picles, frango, salada</p>
+                    </div>
+                </li>
+                <li class="itens">
+                    <div class="geral">
+                        <h3>Spot onin crisp </h3>
+                        <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                        <p>Pão, blend 100g, cheddar, picles, frango,salada</p>
+                    </div>
+                </li>
+                <li class="itens">
+                    <div class="geral">
+                        <h3>Spot onin crisp </h3>
+                        <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                        <p>Pão,  100g, cheddar, picles, frango, salada</p>
+                    </div>
+                </li>
+                <li class="itens">
+                    <div class="geral">
+                        <h3>Spot onin crisp </h3>
+                        <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
+                        <p>Pão, blend 100g, cheddar, picles, frango,salada</p>
+                    </div>
+                </li>
+            </ul>
+        </details>
 
-            <li class="itens">
-                <div class="geral">
-                    <h3>Spot onin crisp </h3>
-                    <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
-                    <p>Pão,  100g, cheddar, picles, frango, salada</p>
-                </div>
-            </li>
-
-            <li class="itens">
-                <div class="geral">
-                    <h3>Spot onin crisp </h3>
-                    <div class="img-config"><img src="./asets/spot-onin-crisp.avif" alt="img 1"></div>
-                    <p>Pão, blend 100g, cheddar, picles, frango,salada</p>
-                </div>
-            </li>
-
- 
-
-            
-        </ul>
+        <details open>
+            <summary>Bebidas</summary>
+            <ul class="main-list">
+                <li class="itens">
+                    <div class="geral">
+                        <h3>Refrigerantes</h3>
+                        <div class="img-config"><img src="./asets/refri.png" alt="img 1"></div>
+                        <p>Refrigerantes de 1L</p>
+                        <ul>
+                            <li>Guaraná</li>
+                            <li>Coca-cola</li>
+                            <li>Fanta</li>
+                            <li>Sprit</li>
+                        </ul>
+                        <ul>
+                            <p>Refrigerantes de 600ML</p>
+                            <ul>
+                                <li>Guaraná</li>
+                                <li>Coca-cola</li>
+                                <li>Fanta</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+            </details>
     </div>
     
 </body>

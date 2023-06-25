@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #893A19;
+    height: 100vh;
+    font-family: 'Istok Web', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+}
+
+#cabesalho a{
+    font-size:25px;
+    color: #fff;
+}
+
+#ul-menu{
+    display: flex;
+    list-style: none;
+    gap: 10rem; 
+}
+
+#ul-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#ul-menu a:hover{
+    background: rgba(216, 210, 210, 0.05);
+}
+
+#most{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(loja.jpg) no-repeat bottom center/cover ;
+    height: 600px;
+    width: 100%;
+}
+
+#text{
+    margin: 15px;
+    width: 450px;
+    color: #fff;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .5px;
+}
+
+.main-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border: 0.01rem solid #000;
+}
+
+.itens{
+    display: inline-block;
+    padding-top: 18px;
+    margin-bottom: 15px;
+}
+
+.itens .geral{
+    display: block;
+    /*border: red solid 1px;*/
+    max-width: 200px;
+    padding: 8px;
+}
+
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.img-config{
+    display:flex;
+    justify-content: center;
+}
+
+
+
