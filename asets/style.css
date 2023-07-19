@@ -3,27 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*pagina principal*/
 body{
     background: #893A19;
     height: 100vh;
     font-family: 'Istok Web', sans-serif;
 }
 
-header{
+#cabesalho{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100px;
     width: 100%;
     background-color: black;
     position: fixed;
     z-index: 2;
 }
 
+a{
+    color: #fff;
+}
+
 #cabesalho a{
     font-size:25px;
-    color: #fff;
 }
 
 #ul-menu{
@@ -33,12 +35,15 @@ header{
 }
 
 #ul-menu a{
-    color: #fff;
     text-decoration: none;
 }
 
 #ul-menu a:hover{
     background: rgba(216, 210, 210, 0.05);
+}
+
+#progf{
+    color: #FC9D3F;
 }
 
 #most{
@@ -89,5 +94,55 @@ img{
     justify-content: center;
 }
 
+.maintitle{
+    font-size: 40px;
+    color: #fff;
+    display: flex; 
+    justify-content: center;
+}
+hr{
+    height: .8px;
+    width: 100%;    
+    background-color: rgba(0, 0, 0, 0.395);
+    border: none;
+}
 
+h3 , p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
 
+details{
+    display: inline-flex;
+    margin: 0px 50px;
+}
+
+summary{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+/*pagina de login e registro*/
+.headerlog{
+    display: block;
+    background-color: transparent;
+    color: #fff;
+}
+
+.titlelog{
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.pointlist{
+    display: inline;  
+}
